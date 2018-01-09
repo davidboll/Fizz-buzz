@@ -17,8 +17,12 @@ describe 'fizz_buzz' do
     expect(fizz_buzz(30)).to eq 'fizz buzz'
   end
 
-  it "returns '-1' if number is -1" do
-    expect(fizz_buzz(-1)).to eq -1
+  it "returns 'Try to be positive' if number is negative" do
+    expect(fizz_buzz(-1)).to eq 'Try to be positive'
+  end
+
+  it "returns 'A string is not a number silly' if number is a string" do
+    expect(fizz_buzz(String)).to eq 'A string is not a number silly'
   end
 
 end
