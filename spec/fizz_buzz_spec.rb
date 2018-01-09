@@ -17,4 +17,8 @@ describe 'fizz_buzz' do
     expect(fizz_buzz(30)).to eq 'fizz buzz'
   end
 
+  it "returns '-1' if number is -1" do
+    expect(fizz_buzz(-1)).to eq -1
+  end
+
 end
